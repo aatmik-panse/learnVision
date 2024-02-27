@@ -13,16 +13,21 @@ struct ContentView: View {
   @Environment (\.openImmersiveSpace) var openImmersiveSpace
 
   var body: some View {
+    var count : Int = 0
     HStack {
       VStack {
-        Model3D(named: "Scene", bundle: realityKitContentBundle)
-//          .onTapGesture {
-//            Task {
-//              await openImmersiveSpace(id: "earth")
-//            }
-//          }
-          .padding(.bottom, 50)
-        Text("Hello, world!")
+        if(count%2==0){
+            Model3D(named: "Scene", bundle: realityKitContentBundle)
+                .onTapGesture {
+                  count=count+1
+                }.padding(.bottom, 50)
+        }else{
+            Model3D(named: "Earth", bundle: realityKitContentBundle)
+                .onTapGesture {
+                  count=count+1
+                }.padding(.bottom, 50)
+        }
+        Text("Hello, SST!")
       }
       .padding(50)
       VStack {
@@ -31,9 +36,8 @@ struct ContentView: View {
           Text("Click Here")
         }
         Button("Open Earth") {
-          Task {
-            await openImmersiveSpace(id: "Earth") 
-          }
+            count=count+1
+            print(count)
         }
       }
       .padding(.bottom, 75)
