@@ -12,6 +12,7 @@
 		421A955E2B8C4E7E00EFF50B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A955D2B8C4E7E00EFF50B /* ContentView.swift */; };
 		421A95602B8C4E8100EFF50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421A955F2B8C4E8100EFF50B /* Assets.xcassets */; };
 		421A95632B8C4E8100EFF50B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421A95622B8C4E8100EFF50B /* Preview Assets.xcassets */; };
+		421A956B2B8D013A00EFF50B /* openEarth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A956A2B8D013A00EFF50B /* openEarth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		421A955F2B8C4E8100EFF50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421A95622B8C4E8100EFF50B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		421A95642B8C4E8100EFF50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421A956A2B8D013A00EFF50B /* openEarth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openEarth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				421A955F2B8C4E8100EFF50B /* Assets.xcassets */,
 				421A95642B8C4E8100EFF50B /* Info.plist */,
 				421A95612B8C4E8100EFF50B /* Preview Content */,
+				421A956A2B8D013A00EFF50B /* openEarth.swift */,
 			);
 			path = learnVision;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				421A955E2B8C4E7E00EFF50B /* ContentView.swift in Sources */,
 				421A955C2B8C4E7E00EFF50B /* learnVisionApp.swift in Sources */,
+				421A956B2B8D013A00EFF50B /* openEarth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

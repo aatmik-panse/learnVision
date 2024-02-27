@@ -12,6 +12,9 @@ struct learnVisionApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+        }.windowStyle(.volumetric)
+        ImmersiveSpace(id:"Earth"){
+            openEarth()
         }
     }
 }

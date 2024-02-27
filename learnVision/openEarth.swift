@@ -6,13 +6,22 @@
 //
 
 import SwiftUI
+import RealityKit
+import RealityKitContent
 
 struct openEarth: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  var body: some View {
+    RealityView { content in
+      do {
+          let entity = try await Entity(named: "Earth", in: realityKitContentBundle)
+        content.add(entity)
+      } catch {
+        print("Error loading entity: \(error.localizedDescription)")
+      }
     }
+  }
 }
 
 #Preview {
-    openEarth()
+  openEarth()
 }
